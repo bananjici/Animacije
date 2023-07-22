@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment CSS 2</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color:  #050210;
+        }
+
+     
+        
+       
+    #container {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        height: 350px;
+        width: 350px;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+       
+        }
+
+        #circle-1 {
+            position: absolute;
+            left: -10px;
+            top: -10px;
+            right: -10px;
+            bottom: -10px;
+            border-radius: 50%;
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            filter: blur(30px);
+            animation: animation 1s linear infinite;
+
+        }
+
+        #circle-2 {
+            position: absolute;
+            left: -20px;
+            top: -20px;
+            right: -20px;
+            bottom: -20px;
+            border-radius: 50%;
+            background: linear-gradient(#fb5dad, #55fb9f, #b97aff);
+            animation: animation 1s linear infinite;
+
+        }
+        
+        #circle-3 {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: #050210;
+            border-radius: 50%;
+        }
+
+        #circle-4 {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            right: 10px;
+            bottom: 10px;
+            background-color: rgba(255, 255, 255, 0.081);
+            border-radius: 50%;
+            opacity: 0.5;
+            animation: pulseOut 1.5s infinite;
+           
+
+        }
+
+        @keyframes animation {
+            0% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(90deg);
+            }
+            50% {
+                transform: rotate(180deg);
+            }
+            75% {
+                transform: rotate(270deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+            
+        }
+
+        @keyframes pulseOut {
+            from {
+                transform: scale(0.1,0.1);
+                opacity: 0.5;
+            }
+            to {
+                transform: scale(1,1);
+                opacity: 0.5;
+            }
+            
+        }
+        
+  
+    
+
+
+   
+   
+    </style>
+</head>
+<div id="container">
+    <div id="circle-1"></div>
+    <div id="circle-2"></div>
+    <div id="circle-3"></div>
+    <div id="circle-4"></div>
+</div>
+    
+</body>
+</html>
